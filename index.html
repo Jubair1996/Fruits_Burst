@@ -51,27 +51,65 @@
   <body class="lato">
     <!-- Header Starts -->
     <header class="max-w-screen-xl mx-auto px-8 md:px-16 lg:px-24 py-5 my-5">
-      <nav class="flex justify-between items-center hidden">
-        <div>
-          <ul class="flex gap-8 justify-center items-center">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Shop</a></li>
-            <li><a href="#">All Fruits</a></li>
-          </ul>
-        </div>
-        <div class="flex justify-center items-center gap-5">
-          <div><img src="./images/logo.png" alt="" /></div>
-          <div><h3>Fruit Burst</h3></div>
-        </div>
-        <div>
-          <input
-            type="text"
-            placeholder="You can't touch this"
-            class="input input-bordered w-full max-w-xs"
-          />
+      <!-- Navbar Section Starts -->
+      <nav class="mb-10">
+        <div class="navbar bg-bg rounded-full">
+          <div class="navbar-start flex-1">
+            <div class="dropdown">
+              <label tabindex="0" class="btn btn-ghost lg:hidden">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h8m-8 6h16"
+                  />
+                </svg>
+              </label>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+              >
+                <li><a>Home</a></li>
+                <li><a>About Us</a></li>
+                <li><a>Shop</a></li>
+                <li><a>All Fruits</a></li>
+              </ul>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+              <ul class="menu menu-horizontal px-1 text-white">
+                <li><a>Home</a></li>
+                <li><a>About Us</a></li>
+                <li><a>Shop</a></li>
+                <li><a>All Fruits</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="flex flex-1 justify-center items-center gap-5 text-white">
+            <div><img src="./images/logo.png" alt="" /></div>
+            <div><h3>Fruit Burst</h3></div>
+          </div>
+          <div class="navbar-end flex-1 hidden md:block">
+            <form class="relative">
+
+              <input
+                type="text"
+                placeholder="Search here"
+                class="input rounded-full w-full max-w-xs"
+            />
+            <button type="submit" class="absolute top-0 right-0 w-14 h-full"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </form>
+              
+          </div>
         </div>
       </nav>
+      <!-- Navbar Section Ends -->
       <!-- Banner Section Starts -->
       <div>
         <div class="carousel w-full relative">
@@ -220,7 +258,7 @@
         <div
           class="mt-20 flex flex-col md:flex-row justify-between items-center"
         >
-          <div class="space-y-2 flex-1">
+          <div class="space-y-2 flex-1 text-center md:text-left">
             <h2 class="font-bold text-4xl text-color">Deal of the day</h2>
             <p class="text-color">
               Contrary to popular belief, is not simply random text. It has
@@ -937,7 +975,7 @@
         class="max-w-screen-xl mx-auto px-8 md:px-16 lg:px-24 py-5 my-10"
       >
         <div class="text-center pb-5">
-          <h1 class="text-2xl md:text-4xl mb-2">Why Choose Us</h1>
+          <h1 class="text-2xl md:text-4xl font-black mb-2">Why Choose Us</h1>
           <p class="text-sm max-w-lg mx-auto">
             Contrary to popular belief, is not simply random text. It has roots
             in a piece of classical Latin literature from 45 BC, making it over
@@ -947,9 +985,12 @@
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-5">
           <div class="space-y-2">
-            <div class="flex flex-col md:flex-row justify-center items-center ml-4 gap-6 ">
+            <div
+              class="flex flex-col md:flex-row justify-center items-center ml-4 gap-6"
+            >
               <a class="text-4xl" href="#"
-                ><i class="fa-solid fa-person"></i></a>
+                ><i class="fa-solid fa-person"></i
+              ></a>
               <div class="space-y-1 text-center md:text-left">
                 <h2 class="font-semibold text-2xl">Dedicated Team</h2>
                 <div class="flex justify-center items-center md:justify-end">
@@ -961,7 +1002,9 @@
                 </p>
               </div>
             </div>
-            <div class="flex flex-col md:flex-row justify-center items-center gap-6">
+            <div
+              class="flex flex-col md:flex-row justify-center items-center gap-6"
+            >
               <a class="text-4xl" href="#"><i class="fa-solid fa-heart"></i></a>
               <div class="space-y-1 text-center md:text-left">
                 <h2 class="font-semibold text-2xl">Fresh is Best</h2>
@@ -972,7 +1015,9 @@
                 </p>
               </div>
             </div>
-            <div class="flex flex-col md:flex-row justify-center items-center gap-6">
+            <div
+              class="flex flex-col md:flex-row justify-center items-center gap-6"
+            >
               <a class="text-4xl" href="#"><i class="fa-solid fa-gift"></i></a>
               <div class="space-y-1 text-center md:text-left">
                 <h2 class="font-semibold text-2xl">Gift Certificates</h2>
@@ -989,7 +1034,9 @@
             <img class="w-full h-full" src="./images/whychoose1.png" alt="" />
           </div>
           <div class="space-y-2">
-            <div class="flex flex-col md:flex-row justify-center items-center gap-6 ">
+            <div
+              class="flex flex-col md:flex-row justify-center items-center gap-6"
+            >
               <div class="space-y-1 text-center md:text-right">
                 <h2 class="font-semibold text-2xl">Integrated Supplier</h2>
                 <div class="flex justify-center items-center md:justify-end">
@@ -1001,9 +1048,12 @@
                 </p>
               </div>
               <a class="text-4xl" href="#"
-                ><i class="fa-solid fa-truck-field-un"></i></a>
+                ><i class="fa-solid fa-truck-field-un"></i
+              ></a>
             </div>
-            <div class="flex flex-col md:flex-row justify-center items-center gap-6">
+            <div
+              class="flex flex-col md:flex-row justify-center items-center gap-6"
+            >
               <div class="space-y-1 text-center md:text-right">
                 <h2 class="font-semibold text-2xl">Sustainable Practice</h2>
                 <div class="flex justify-end">
@@ -1018,7 +1068,9 @@
                 ><i class="fa-solid fa-ice-cream"></i
               ></a>
             </div>
-            <div class="flex flex-col md:flex-row justify-center items-center gap-6">
+            <div
+              class="flex flex-col md:flex-row justify-center items-center gap-6"
+            >
               <div class="space-y-1 text-center md:text-right">
                 <h2 class="font-semibold text-2xl">The Benefits Only</h2>
                 <div class="flex justify-end">
@@ -1065,4 +1117,3 @@
     <!-- Footer Section Ends -->
   </body>
 </html>
-<!-- <i class="fa-solid fa-magnifying-glass"></i> -->
